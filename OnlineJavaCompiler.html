@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>AndroidJavaCompiler</title>
+<script type="text/javascript">
+function validate()
+ {
+var username=document.form.UserName.value;
+var password=document.form.password.value;
+if(username==""){
+  document.getElementById('lab1').innerHTML="<small><font color='black'>Enter Username!</font></small>";
+  return false;
+}
+if(password==""){
+  document.getElementById('lab2').innerHTML="<small><font color='black'>Enter Password!</font></small>";
+  return false;
+}
+return true;
+}
+</script>
+	  
+<style type="text/css">
+<!--
+.style1 {
+	font-family: "Comic Sans MS";
+	color: #00FF00;
+	font-weight: bold;
+}
+.style4 {
+	font-size: 12px;
+	color: #FF6633;
+	font-weight: bold;
+}
+.style8 {
+	color: #0033FF;
+	font-size: 14px;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+}
+.style9
+{background-repeat:no-repeat;
+}
+.style12 {
+	font-size: 12px;
+	color: #FF6666;
+	font-weight: bold;
+}
+.style13 {
+	color: #FF6633;
+	font-weight: bold;
+}
+.style14 {color: #FF00FF}
+
+-->
+</style>
+</head>
+
+<body>
+    <table width="340" height="456" border="1" align="center" bgcolor="#993366">
+  <tr>
+    <td width="270" align="center" class="style9"  ><p class="style1">ONLINE JAVA COMPILER</p>
+      <p class="style1">&nbsp;</p>
+      <p class="style8">Login Form</p>
+	<form name="form" method="get" action="UserLogin" onsubmit="javascript:return validate();">
+      <table width="253">
+        <tr>
+          <td width="63" align="left"><span class="style12">Username</span></td>
+          <td width="163"><input type="text" name="UserName" />
+                <label id="lab1"></label></td>
+        </tr>
+        <tr>
+          <td><span class="style4">Password</span><span class="style13">:</span></td>
+          <td><input type="password" name="password" />
+                <label id="lab2"></label></td>
+        </tr>
+        <tr>
+          <td height="37"></td>
+          <td><input name="submit" type="submit" value="Signin" />
+              <label>
+                <input name="reset" type="reset" id="reset" value="reset" />
+                <br />
+                <br />
+                <span class="style14" style="text-decoration:blink"><a href="userinfo.html">Click here to Register</a> </span></label></td>
+        </tr>
+      </table>
+    </form>
+   </td>
+  </tr>
+</table>
+</body>
+</html>
