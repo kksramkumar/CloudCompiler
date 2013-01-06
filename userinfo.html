@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>NEW USER INFORMATION</title>
+<script type="text/javascript">
+function validate()
+ {
+var username=document.usif.user.value;
+var password=document.usif.pass.value;
+var rpassword=document.usif.rpass.value;
+var emailid=document.usif.email.value;
+var location=document.usif.loc.value;
+if(username==""){
+  document.getElementById('lab1').innerHTML="<small><font color='red'>Enter Username!</font></small>";
+  return false;
+}
+if(password==""){
+  document.getElementById('lab2').innerHTML="<small><font color='red'>Enter Password!</font></small>";
+  return false;
+}
+if(rpassword==""){
+  document.getElementById('lab3').innerHTML="<small><font color='red'>Enter Re-Password!</font></small>";
+  return false;
+}
+if(password!=rpassword){
+  document.getElementById('lab3').innerHTML="<small><font color='red'>Password & Re-Password are not Same!</font></small>";
+  return false;
+}
+if(emailid==""){
+  document.getElementById('lab4').innerHTML="<small><font color='red'>Enter Emailid!</font></small>";
+  return false;
+}
+if(location==""){
+  document.getElementById('lab5').innerHTML="<small><font color='red'>Enter Location!</font></small>";
+  return false;
+}
+return true;
+}
+</script>
+</head>
+<body background="bg.jpg"> <br><br><br>
+
+<font color="BLUE" face="Times New Roman">
+<form name="usif" method="post" action="NewUser" onSubmit="return validate()">
+<table width="320" height="456" border="1" align="center" bgcolor="#7A715C" >
+    <tr align="center">
+      <td colspan="2" align="center"><p><font face="Arial" size=4 color="#660000">New User Information</font></p>
+      </td>
+	  <br><br>
+    </tr>
+  <tr>
+    <td>UserName</td>
+    <td><input name="user" type="text" ><br>
+	<label id="lab1"></label></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td><input name="pass" type="password"><br>
+	<label id="lab2"></label></td></td>
+  </tr>
+  <tr>
+    <td>Re-Password</td>
+    <td><input name="rpass" type="password"><br>
+	<label id="lab3"></label></td>
+  </tr>
+  <tr>
+    <td>E-mail</td>
+    <td><input name="email" type="email"><br>
+	<label id="lab4"></label></td>
+  </tr>
+  <tr>
+    <td>Location</td>
+    <td><input name="loc" type="text"><br>
+	<label id="lab5"></label></td>
+  </tr>
+  <tr>
+    <td><input name="submit" type="submit" value="submit"></td>
+    <td><input name="reset" type="reset" value="Reset"></td>
+  </tr>
+</table>
+
+
+
+</form>
+</body>
+</html>
